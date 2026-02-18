@@ -127,9 +127,9 @@ def main(name_basemodel, num_classes, num_channels_img):
 
 
     # Save training history to CSV file
-    pd.DataFrame(history).to_csv('path-to-save-history.csv', index=False)  #FIXME: Update with the actual path to save the CSV file of the history 
+    pd.DataFrame(history).to_csv('path-to-save-history.csv', index=False)  # FIXME: Update with the actual path to save the CSV file of the history 
     # Save model weights
-    torch.save(model.state_dict(), 'path-to-save-model')                   #FIXME: Update with the actual path to save the trained model weights
+    torch.save(model.state_dict(), 'path-to-save-model')                   # FIXME: Update with the actual path to save the trained model weights
 
 
 
