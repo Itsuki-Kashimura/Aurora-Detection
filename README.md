@@ -8,8 +8,7 @@ Use 'train_model_MNIST.py' and 'test_model_MNIST.py' as test cases to execute wi
    *Typically, 60-80% of the data is used for training, with the remainder reserved for validation and test.
 3. Update the path to the training and validation CSV file, and to the directory containing images.
 4. Update the path to save the CSV file of the history and the trained model weights.
-5. Excute.
-
+5. Excute.  
    *Select your favorite base model, and adjust epochs, learning rate, optimizer, and scheduler as needed.
 
 ## Test procedure
