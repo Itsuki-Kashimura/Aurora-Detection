@@ -33,7 +33,8 @@ def main(name_basemodel, num_classes, num_channels_img):
     else:
         raise ValueError(f"Invalid model name: {name_basemodel}. Choose from 'ResNet18', 'ResNet50', 'VGG16', 'VGG19', 'AlexNet'.")
     
-    model.load_state_dict(torch.load('path-to-trained-model'))  # Load trained weights
+    # Load the trained model weights
+    model.load_state_dict(torch.load('path-to-trained-model'))  # FIXME: Update with the actual path to the trained model weights
 
     # Load training and validation datasets
     test_dataset = torchvision.datasets.MNIST(
@@ -67,7 +68,7 @@ def main(name_basemodel, num_classes, num_channels_img):
         'label_estimated': ouputs,
         'label_correct': labels
     })
-    results.to_csv('path-to-save-test-predictions', index=False)
+    results.to_csv('path-to-save-test-predictions', index=False)  # FIXME: Update with the actual path to save the test predictions CSV file
 
 
 
@@ -75,7 +76,7 @@ if __name__ == "__main__":
 
     main(
         name_basemodel='ResNet18',  # Model architecture to use (e.g., 'ResNet18', 'ResNet50', 'VGG16', 'VGG19', 'AlexNet')
-        num_classes=10,       # Number of classes for classification (2 for binary, >2 for multiclass)
-        num_channels_img=1,  # Number of channels in the input images (e.g., 1 for grayscale, 3 for RGB)
+        num_classes=10,             # Number of classes for classification (2 for binary, >2 for multiclass)
+        num_channels_img=1,         # Number of channels in the input images (e.g., 1 for grayscale, 3 for RGB)
     )
 
