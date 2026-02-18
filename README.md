@@ -1,5 +1,5 @@
 # Aurora-Detection
-Use 'train_model.py' and 'test_model.py' for actual cases.
+Use 'train_model.py' and 'test_model.py' for actual cases.  
 Use 'train_model_MNIST.py' and 'test_model_MNIST.py' as test cases to execute with the publicly available MNIST dataset.
 
 ## Training procedure
@@ -13,7 +13,7 @@ Use 'train_model_MNIST.py' and 'test_model_MNIST.py' as test cases to execute wi
 
 ## Test procedure
 1. Prepare CSV files for test (contains only test data) with two columns: "filename_img" and "label_detection"(labels indicating the presence of auroras).
-2. Updata the path to the trained model weights.
+2. Update the path to the trained model weights.
 3. Update the path to the test CSV file, and to the directory containing images.
 4. Update the path to save the CSV file of the estimated labels.
 5. Excute.
