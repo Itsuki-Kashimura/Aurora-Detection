@@ -38,13 +38,13 @@ def main(name_basemodel, num_classes, num_channels_img):
 
     # Load training and validation datasets
     train_dataset = ImageDataSet(
-        path_to_labels_csv="path-to-df-labels-train.csv",  #FIXME: Update with the actual path to the training CSV file
-        path_to_img_dir="path-to-images-dir",              #FIXME: Update with the actual path to the directory containing images
+        path_to_labels_csv="path-to-df-labels-train.csv",  # FIXME: Update with the actual path to the training CSV file
+        path_to_img_dir="path-to-images-dir",              # FIXME: Update with the actual path to the directory containing images
         crop_size=crop_size
     )
     valid_dataset = ImageDataSet(
-        path_to_labels_csv="path-to-df-labels-valid.csv",  #FIXME: Update with the actual path to the validation CSV file
-        path_to_img_dir="path-to-images-dir",              #FIXME: Update with the actual path to the directory containing images
+        path_to_labels_csv="path-to-df-labels-valid.csv",  # FIXME: Update with the actual path to the validation CSV file
+        path_to_img_dir="path-to-images-dir",              # FIXME: Update with the actual path to the directory containing images
         crop_size=crop_size
     )
 
