@@ -136,7 +136,7 @@ def main(name_basemodel, num_classes, num_channels_img):
 if __name__ == '__main__':
 
     main(
-        name_basemodel='VGG16',  # Model architecture to use (e.g., 'ResNet18', 'ResNet50', 'VGG16', 'VGG19', 'AlexNet')
+        name_basemodel='ResNet18',  # Model architecture to use (e.g., 'ResNet18', 'ResNet50', 'VGG16', 'VGG19', 'AlexNet')
         num_classes=10,       # Number of classes for classification (2 for binary, >2 for multiclass)
         num_channels_img=1,  # Number of channels in the input images (e.g., 1 for grayscale, 3 for RGB)
     )
